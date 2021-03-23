@@ -16,5 +16,18 @@ namespace TimeManagement1
         {
             InitializeComponent();
         }
+
+        private void chart1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            this.chart1.Series["Age"].Points.AddXY("Max",33);
+            this.chart1.Series["Age"].Points.AddXY("carl", 20);
+            this.chart1.Series["Age"].Points.AddXY("mark", 50);
+            this.chart1.Series["Age"].Points.AddXY("alli", 40);
+        }
     }
 }

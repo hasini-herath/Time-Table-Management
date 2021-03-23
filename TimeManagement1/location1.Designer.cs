@@ -1,7 +1,7 @@
 ﻿
 namespace TimeManagement1
 {
-    partial class location
+    partial class location1
     {
         /// <summary>
         /// Required designer variable.
@@ -131,6 +131,9 @@ namespace TimeManagement1
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabPage11 = new System.Windows.Forms.TabPage();
+            this.comboBox19 = new System.Windows.Forms.ComboBox();
+            this.comboBox18 = new System.Windows.Forms.ComboBox();
+            this.label48 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.label39 = new System.Windows.Forms.Label();
@@ -138,8 +141,6 @@ namespace TimeManagement1
             this.numericUpDown7 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown8 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown9 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown10 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown11 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown12 = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label37 = new System.Windows.Forms.Label();
@@ -147,10 +148,12 @@ namespace TimeManagement1
             this.label35 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.label33 = new System.Windows.Forms.Label();
             this.comboBox16 = new System.Windows.Forms.ComboBox();
             this.label32 = new System.Windows.Forms.Label();
             this.tabPage12 = new System.Windows.Forms.TabPage();
+            this.comboBox21 = new System.Windows.Forms.ComboBox();
+            this.comboBox20 = new System.Windows.Forms.ComboBox();
+            this.label33 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -160,8 +163,6 @@ namespace TimeManagement1
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown3 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
-            this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
             this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.label43 = new System.Windows.Forms.Label();
@@ -177,8 +178,6 @@ namespace TimeManagement1
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.c11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label40 = new System.Windows.Forms.Label();
-            this.label48 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -198,15 +197,11 @@ namespace TimeManagement1
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).BeginInit();
             this.tabPage12.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
@@ -216,11 +211,11 @@ namespace TimeManagement1
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(7, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(786, 478);
-            this.tabControl1.TabIndex = 1;
+            this.tabControl1.Size = new System.Drawing.Size(786, 438);
+            this.tabControl1.TabIndex = 2;
             // 
             // tabPage1
             // 
@@ -228,7 +223,7 @@ namespace TimeManagement1
             this.tabPage1.Location = new System.Drawing.Point(4, 29);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(778, 445);
+            this.tabPage1.Size = new System.Drawing.Size(778, 405);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Locations";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -824,7 +819,6 @@ namespace TimeManagement1
             this.tabPage7.Size = new System.Drawing.Size(730, 471);
             this.tabPage7.TabIndex = 2;
             this.tabPage7.Text = "Lecturer";
-            this.tabPage7.Click += new System.EventHandler(this.tabPage7_Click);
             // 
             // button17
             // 
@@ -1263,6 +1257,8 @@ namespace TimeManagement1
             // tabPage11
             // 
             this.tabPage11.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage11.Controls.Add(this.comboBox19);
+            this.tabPage11.Controls.Add(this.comboBox18);
             this.tabPage11.Controls.Add(this.label48);
             this.tabPage11.Controls.Add(this.button2);
             this.tabPage11.Controls.Add(this.button1);
@@ -1271,8 +1267,6 @@ namespace TimeManagement1
             this.tabPage11.Controls.Add(this.numericUpDown7);
             this.tabPage11.Controls.Add(this.numericUpDown8);
             this.tabPage11.Controls.Add(this.numericUpDown9);
-            this.tabPage11.Controls.Add(this.numericUpDown10);
-            this.tabPage11.Controls.Add(this.numericUpDown11);
             this.tabPage11.Controls.Add(this.numericUpDown12);
             this.tabPage11.Controls.Add(this.dateTimePicker1);
             this.tabPage11.Controls.Add(this.label37);
@@ -1280,7 +1274,6 @@ namespace TimeManagement1
             this.tabPage11.Controls.Add(this.label35);
             this.tabPage11.Controls.Add(this.label34);
             this.tabPage11.Controls.Add(this.textBox8);
-            this.tabPage11.Controls.Add(this.label33);
             this.tabPage11.Controls.Add(this.comboBox16);
             this.tabPage11.Controls.Add(this.label32);
             this.tabPage11.Location = new System.Drawing.Point(4, 25);
@@ -1289,9 +1282,39 @@ namespace TimeManagement1
             this.tabPage11.TabIndex = 6;
             this.tabPage11.Text = "Not Available Time";
             // 
+            // comboBox19
+            // 
+            this.comboBox19.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox19.FormattingEnabled = true;
+            this.comboBox19.Location = new System.Drawing.Point(459, 227);
+            this.comboBox19.Name = "comboBox19";
+            this.comboBox19.Size = new System.Drawing.Size(39, 24);
+            this.comboBox19.TabIndex = 138;
+            // 
+            // comboBox18
+            // 
+            this.comboBox18.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox18.FormattingEnabled = true;
+            this.comboBox18.Location = new System.Drawing.Point(459, 256);
+            this.comboBox18.Name = "comboBox18";
+            this.comboBox18.Size = new System.Drawing.Size(39, 24);
+            this.comboBox18.TabIndex = 137;
+            // 
+            // label48
+            // 
+            this.label48.AutoSize = true;
+            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label48.ForeColor = System.Drawing.Color.DarkRed;
+            this.label48.Location = new System.Drawing.Point(20, 29);
+            this.label48.Name = "label48";
+            this.label48.Size = new System.Drawing.Size(205, 20);
+            this.label48.TabIndex = 136;
+            this.label48.Text = "Location, Date and Time";
+            // 
             // button2
             // 
             this.button2.BackColor = System.Drawing.Color.Maroon;
+            this.button2.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button2.Location = new System.Drawing.Point(360, 299);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(75, 33);
@@ -1302,6 +1325,7 @@ namespace TimeManagement1
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Maroon;
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.button1.Location = new System.Drawing.Point(180, 299);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(84, 33);
@@ -1313,7 +1337,7 @@ namespace TimeManagement1
             // 
             this.label39.AutoSize = true;
             this.label39.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label39.Location = new System.Drawing.Point(311, 189);
+            this.label39.Location = new System.Drawing.Point(312, 207);
             this.label39.Name = "label39";
             this.label39.Size = new System.Drawing.Size(68, 17);
             this.label39.TabIndex = 85;
@@ -1323,7 +1347,7 @@ namespace TimeManagement1
             // 
             this.label38.AutoSize = true;
             this.label38.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label38.Location = new System.Drawing.Point(159, 189);
+            this.label38.Location = new System.Drawing.Point(160, 207);
             this.label38.Name = "label38";
             this.label38.Size = new System.Drawing.Size(51, 17);
             this.label38.TabIndex = 84;
@@ -1358,24 +1382,6 @@ namespace TimeManagement1
             0,
             0,
             0});
-            // 
-            // numericUpDown10
-            // 
-            this.numericUpDown10.AllowDrop = true;
-            this.numericUpDown10.Enabled = false;
-            this.numericUpDown10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown10.Location = new System.Drawing.Point(507, 227);
-            this.numericUpDown10.Name = "numericUpDown10";
-            this.numericUpDown10.Size = new System.Drawing.Size(34, 23);
-            this.numericUpDown10.TabIndex = 80;
-            // 
-            // numericUpDown11
-            // 
-            this.numericUpDown11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.numericUpDown11.Location = new System.Drawing.Point(507, 255);
-            this.numericUpDown11.Name = "numericUpDown11";
-            this.numericUpDown11.Size = new System.Drawing.Size(34, 23);
-            this.numericUpDown11.TabIndex = 79;
             // 
             // numericUpDown12
             // 
@@ -1415,10 +1421,9 @@ namespace TimeManagement1
             // label35
             // 
             this.label35.AutoSize = true;
-            this.label35.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
             this.label35.Location = new System.Drawing.Point(21, 153);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(92, 17);
+            this.label35.Size = new System.Drawing.Size(89, 16);
             this.label35.TabIndex = 11;
             this.label35.Text = "Select Date";
             // 
@@ -1438,16 +1443,6 @@ namespace TimeManagement1
             this.textBox8.Name = "textBox8";
             this.textBox8.Size = new System.Drawing.Size(176, 22);
             this.textBox8.TabIndex = 9;
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(21, 27);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(205, 23);
-            this.label33.TabIndex = 8;
-            this.label33.Text = "Location,Date and Time";
             // 
             // comboBox16
             // 
@@ -1470,6 +1465,9 @@ namespace TimeManagement1
             // tabPage12
             // 
             this.tabPage12.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage12.Controls.Add(this.comboBox21);
+            this.tabPage12.Controls.Add(this.comboBox20);
+            this.tabPage12.Controls.Add(this.label33);
             this.tabPage12.Controls.Add(this.button6);
             this.tabPage12.Controls.Add(this.button5);
             this.tabPage12.Controls.Add(this.button3);
@@ -1479,8 +1477,6 @@ namespace TimeManagement1
             this.tabPage12.Controls.Add(this.numericUpDown1);
             this.tabPage12.Controls.Add(this.numericUpDown2);
             this.tabPage12.Controls.Add(this.numericUpDown3);
-            this.tabPage12.Controls.Add(this.numericUpDown4);
-            this.tabPage12.Controls.Add(this.numericUpDown5);
             this.tabPage12.Controls.Add(this.numericUpDown6);
             this.tabPage12.Controls.Add(this.dateTimePicker2);
             this.tabPage12.Controls.Add(this.label43);
@@ -1491,21 +1487,49 @@ namespace TimeManagement1
             this.tabPage12.Controls.Add(this.comboBox17);
             this.tabPage12.Controls.Add(this.label47);
             this.tabPage12.Controls.Add(this.dataGridView3);
-            this.tabPage12.Controls.Add(this.label40);
             this.tabPage12.Location = new System.Drawing.Point(4, 25);
             this.tabPage12.Name = "tabPage12";
             this.tabPage12.Padding = new System.Windows.Forms.Padding(3);
             this.tabPage12.Size = new System.Drawing.Size(730, 471);
             this.tabPage12.TabIndex = 7;
             this.tabPage12.Text = "Manage Not Available Times";
-            this.tabPage12.Click += new System.EventHandler(this.tabPage12_Click);
+            // 
+            // comboBox21
+            // 
+            this.comboBox21.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox21.FormattingEnabled = true;
+            this.comboBox21.Location = new System.Drawing.Point(471, 357);
+            this.comboBox21.Name = "comboBox21";
+            this.comboBox21.Size = new System.Drawing.Size(39, 24);
+            this.comboBox21.TabIndex = 140;
+            // 
+            // comboBox20
+            // 
+            this.comboBox20.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.comboBox20.FormattingEnabled = true;
+            this.comboBox20.Location = new System.Drawing.Point(471, 329);
+            this.comboBox20.Name = "comboBox20";
+            this.comboBox20.Size = new System.Drawing.Size(39, 24);
+            this.comboBox20.TabIndex = 139;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.ForeColor = System.Drawing.Color.DarkRed;
+            this.label33.Location = new System.Drawing.Point(29, 18);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(274, 20);
+            this.label33.TabIndex = 137;
+            this.label33.Text = "Manage Location, Date and Time";
             // 
             // button6
             // 
             this.button6.BackColor = System.Drawing.Color.Maroon;
-            this.button6.Location = new System.Drawing.Point(649, 359);
+            this.button6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button6.Location = new System.Drawing.Point(606, 307);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 41);
+            this.button6.Size = new System.Drawing.Size(118, 41);
             this.button6.TabIndex = 107;
             this.button6.Text = "Delete";
             this.button6.UseVisualStyleBackColor = false;
@@ -1513,9 +1537,10 @@ namespace TimeManagement1
             // button5
             // 
             this.button5.BackColor = System.Drawing.Color.Maroon;
-            this.button5.Location = new System.Drawing.Point(649, 215);
+            this.button5.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button5.Location = new System.Drawing.Point(606, 89);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 41);
+            this.button5.Size = new System.Drawing.Size(118, 40);
             this.button5.TabIndex = 106;
             this.button5.Text = "Refresh";
             this.button5.UseVisualStyleBackColor = false;
@@ -1523,9 +1548,10 @@ namespace TimeManagement1
             // button3
             // 
             this.button3.BackColor = System.Drawing.Color.Maroon;
-            this.button3.Location = new System.Drawing.Point(649, 289);
+            this.button3.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button3.Location = new System.Drawing.Point(606, 221);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 41);
+            this.button3.Size = new System.Drawing.Size(118, 39);
             this.button3.TabIndex = 105;
             this.button3.Text = "Update";
             this.button3.UseVisualStyleBackColor = false;
@@ -1533,9 +1559,10 @@ namespace TimeManagement1
             // button4
             // 
             this.button4.BackColor = System.Drawing.Color.Maroon;
-            this.button4.Location = new System.Drawing.Point(501, 81);
+            this.button4.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button4.Location = new System.Drawing.Point(500, 52);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(82, 27);
+            this.button4.Size = new System.Drawing.Size(87, 31);
             this.button4.TabIndex = 104;
             this.button4.Text = "Search";
             this.button4.UseVisualStyleBackColor = false;
@@ -1543,20 +1570,20 @@ namespace TimeManagement1
             // label41
             // 
             this.label41.AutoSize = true;
-            this.label41.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label41.Location = new System.Drawing.Point(328, 299);
+            this.label41.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label41.Location = new System.Drawing.Point(329, 311);
             this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(83, 23);
+            this.label41.Size = new System.Drawing.Size(68, 17);
             this.label41.TabIndex = 103;
             this.label41.Text = "Minitues";
             // 
             // label42
             // 
             this.label42.AutoSize = true;
-            this.label42.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label42.Location = new System.Drawing.Point(176, 299);
+            this.label42.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label42.Location = new System.Drawing.Point(177, 311);
             this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(62, 23);
+            this.label42.Size = new System.Drawing.Size(51, 17);
             this.label42.TabIndex = 102;
             this.label42.Text = "Hours";
             // 
@@ -1581,20 +1608,6 @@ namespace TimeManagement1
             this.numericUpDown3.Size = new System.Drawing.Size(120, 22);
             this.numericUpDown3.TabIndex = 99;
             // 
-            // numericUpDown4
-            // 
-            this.numericUpDown4.Location = new System.Drawing.Point(524, 331);
-            this.numericUpDown4.Name = "numericUpDown4";
-            this.numericUpDown4.Size = new System.Drawing.Size(34, 22);
-            this.numericUpDown4.TabIndex = 98;
-            // 
-            // numericUpDown5
-            // 
-            this.numericUpDown5.Location = new System.Drawing.Point(524, 359);
-            this.numericUpDown5.Name = "numericUpDown5";
-            this.numericUpDown5.Size = new System.Drawing.Size(34, 22);
-            this.numericUpDown5.TabIndex = 97;
-            // 
             // numericUpDown6
             // 
             this.numericUpDown6.Location = new System.Drawing.Point(180, 331);
@@ -1612,46 +1625,46 @@ namespace TimeManagement1
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label43.Location = new System.Drawing.Point(38, 367);
+            this.label43.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label43.Location = new System.Drawing.Point(31, 366);
             this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(87, 23);
+            this.label43.Size = new System.Drawing.Size(76, 17);
             this.label43.TabIndex = 94;
             this.label43.Text = "End Time";
             // 
             // label44
             // 
             this.label44.AutoSize = true;
-            this.label44.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label44.Location = new System.Drawing.Point(38, 327);
+            this.label44.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label44.Location = new System.Drawing.Point(31, 331);
             this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(97, 23);
+            this.label44.Size = new System.Drawing.Size(83, 17);
             this.label44.TabIndex = 93;
             this.label44.Text = "Start Time";
             // 
             // label45
             // 
             this.label45.AutoSize = true;
-            this.label45.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label45.Location = new System.Drawing.Point(38, 263);
+            this.label45.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label45.Location = new System.Drawing.Point(31, 263);
             this.label45.Name = "label45";
-            this.label45.Size = new System.Drawing.Size(106, 23);
+            this.label45.Size = new System.Drawing.Size(92, 17);
             this.label45.TabIndex = 92;
             this.label45.Text = "Select Date";
             // 
             // label46
             // 
             this.label46.AutoSize = true;
-            this.label46.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label46.Location = new System.Drawing.Point(38, 221);
+            this.label46.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label46.Location = new System.Drawing.Point(30, 221);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(140, 23);
+            this.label46.Size = new System.Drawing.Size(120, 17);
             this.label46.TabIndex = 91;
             this.label46.Text = "Select Location";
             // 
             // textBox9
             // 
-            this.textBox9.Location = new System.Drawing.Point(289, 83);
+            this.textBox9.Location = new System.Drawing.Point(293, 58);
             this.textBox9.Name = "textBox9";
             this.textBox9.Size = new System.Drawing.Size(176, 22);
             this.textBox9.TabIndex = 90;
@@ -1667,10 +1680,10 @@ namespace TimeManagement1
             // label47
             // 
             this.label47.AutoSize = true;
-            this.label47.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label47.Location = new System.Drawing.Point(143, 83);
+            this.label47.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label47.Location = new System.Drawing.Point(147, 58);
             this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(104, 23);
+            this.label47.Size = new System.Drawing.Size(90, 17);
             this.label47.TabIndex = 88;
             this.label47.Text = "Loaction ID";
             // 
@@ -1683,7 +1696,7 @@ namespace TimeManagement1
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.c11});
-            this.dataGridView3.Location = new System.Drawing.Point(33, 116);
+            this.dataGridView3.Location = new System.Drawing.Point(34, 89);
             this.dataGridView3.Name = "dataGridView3";
             this.dataGridView3.Size = new System.Drawing.Size(553, 75);
             this.dataGridView3.TabIndex = 10;
@@ -1713,35 +1726,14 @@ namespace TimeManagement1
             this.c11.HeaderText = "End Time";
             this.c11.Name = "c11";
             // 
-            // label40
-            // 
-            this.label40.AutoSize = true;
-            this.label40.Font = new System.Drawing.Font("Bahnschrift", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label40.Location = new System.Drawing.Point(29, 21);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(205, 23);
-            this.label40.TabIndex = 9;
-            this.label40.Text = "Location,Date and Time";
-            // 
-            // label48
-            // 
-            this.label48.AutoSize = true;
-            this.label48.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label48.ForeColor = System.Drawing.Color.DarkRed;
-            this.label48.Location = new System.Drawing.Point(332, 103);
-            this.label48.Name = "label48";
-            this.label48.Size = new System.Drawing.Size(276, 20);
-            this.label48.TabIndex = 136;
-            this.label48.Text = "Manage Working Days and Hours";
-            // 
-            // location
+            // location1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 516);
+            this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.tabControl1);
-            this.Name = "location";
-            this.Text = "location";
+            this.Name = "location1";
+            this.Text = "location1";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabControl2.ResumeLayout(false);
@@ -1770,16 +1762,12 @@ namespace TimeManagement1
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown10)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown12)).EndInit();
             this.tabPage12.ResumeLayout(false);
             this.tabPage12.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
@@ -1890,15 +1878,9 @@ namespace TimeManagement1
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.TabPage tabPage11;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.ComboBox comboBox16;
-        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.ComboBox comboBox19;
+        private System.Windows.Forms.ComboBox comboBox18;
+        private System.Windows.Forms.Label label48;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label39;
@@ -1906,10 +1888,19 @@ namespace TimeManagement1
         private System.Windows.Forms.NumericUpDown numericUpDown7;
         private System.Windows.Forms.NumericUpDown numericUpDown8;
         private System.Windows.Forms.NumericUpDown numericUpDown9;
-        private System.Windows.Forms.NumericUpDown numericUpDown10;
-        private System.Windows.Forms.NumericUpDown numericUpDown11;
         private System.Windows.Forms.NumericUpDown numericUpDown12;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.ComboBox comboBox16;
+        private System.Windows.Forms.Label label32;
         private System.Windows.Forms.TabPage tabPage12;
+        private System.Windows.Forms.ComboBox comboBox21;
+        private System.Windows.Forms.ComboBox comboBox20;
+        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button button3;
@@ -1919,8 +1910,6 @@ namespace TimeManagement1
         private System.Windows.Forms.NumericUpDown numericUpDown1;
         private System.Windows.Forms.NumericUpDown numericUpDown2;
         private System.Windows.Forms.NumericUpDown numericUpDown3;
-        private System.Windows.Forms.NumericUpDown numericUpDown4;
-        private System.Windows.Forms.NumericUpDown numericUpDown5;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
         private System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label43;
@@ -1936,7 +1925,5 @@ namespace TimeManagement1
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
         private System.Windows.Forms.DataGridViewTextBoxColumn c11;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.Label label48;
     }
 }

@@ -52,6 +52,7 @@
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,14 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C:\Users\it\Documents\location.cs">
-      <Link>location.cs</Link>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="C:\Users\it\Documents\location.Designer.cs">
-      <Link>location.Designer.cs</Link>
-      <DependentUpon>location.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +75,18 @@
     </Compile>
     <Compile Include="lecturer.Designer.cs">
       <DependentUpon>lecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="location1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="location1.Designer.cs">
+      <DependentUpon>location1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,15 +134,17 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>time1DataSet3.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="C:\Users\it\Documents\location.resx">
-      <Link>location.resx</Link>
-      <DependentUpon>location.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="lecturer.resx">
       <DependentUpon>lecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="location1.resx">
+      <DependentUpon>location1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

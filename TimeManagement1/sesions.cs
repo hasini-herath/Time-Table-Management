@@ -121,5 +121,10 @@ namespace TimeManagement1
         {
 
         }
+
+        private void label70_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
