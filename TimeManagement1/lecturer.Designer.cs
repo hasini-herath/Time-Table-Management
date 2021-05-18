@@ -290,6 +290,7 @@
             this.textBox10.Name = "textBox10";
             this.textBox10.Size = new System.Drawing.Size(131, 20);
             this.textBox10.TabIndex = 18;
+          //  this.textBox10.TextChanged += new System.EventHandler(this.textBox10_TextChanged);
             // 
             // label20
             // 
@@ -390,7 +391,7 @@
             "Mechanics",
             "Electric",
             "Electronic"});
-            this.comboBox2.Location = new System.Drawing.Point(180, 169);
+            this.comboBox2.Location = new System.Drawing.Point(180, 166);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(131, 21);
@@ -398,7 +399,6 @@
             // 
             // comboBox1
             // 
-            this.comboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
@@ -520,7 +520,7 @@
             this.button14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button14.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button14.Location = new System.Drawing.Point(671, 78);
+            this.button14.Location = new System.Drawing.Point(680, 66);
             this.button14.Margin = new System.Windows.Forms.Padding(2);
             this.button14.Name = "button14";
             this.button14.Size = new System.Drawing.Size(81, 40);
@@ -803,11 +803,11 @@
             this.levlDataGridViewTextBoxColumn1,
             this.rnkDataGridViewTextBoxColumn1});
             this.dataGridView1.DataSource = this.addlecBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(29, 66);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 66);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 28;
-            this.dataGridView1.Size = new System.Drawing.Size(622, 137);
+            this.dataGridView1.Size = new System.Drawing.Size(647, 137);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView1_RowHeaderMouseClick);
             // 
@@ -1248,10 +1248,10 @@
             this.button15.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button15.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button15.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button15.Location = new System.Drawing.Point(690, 65);
+            this.button15.Location = new System.Drawing.Point(693, 87);
             this.button15.Margin = new System.Windows.Forms.Padding(2);
             this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(89, 29);
+            this.button15.Size = new System.Drawing.Size(80, 29);
             this.button15.TabIndex = 70;
             this.button15.Text = "REFRESH";
             this.button15.UseVisualStyleBackColor = false;
@@ -1264,7 +1264,7 @@
             this.button13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button13.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.button13.Location = new System.Drawing.Point(519, 27);
+            this.button13.Location = new System.Drawing.Point(593, 25);
             this.button13.Margin = new System.Windows.Forms.Padding(2);
             this.button13.Name = "button13";
             this.button13.Size = new System.Drawing.Size(77, 30);
@@ -1457,7 +1457,7 @@
             // 
             // textBox7
             // 
-            this.textBox7.Location = new System.Drawing.Point(377, 30);
+            this.textBox7.Location = new System.Drawing.Point(451, 28);
             this.textBox7.Margin = new System.Windows.Forms.Padding(2);
             this.textBox7.Name = "textBox7";
             this.textBox7.Size = new System.Drawing.Size(131, 23);
@@ -1500,7 +1500,7 @@
             // 
             this.label31.AutoSize = true;
             this.label31.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(220, 34);
+            this.label31.Location = new System.Drawing.Point(294, 32);
             this.label31.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(73, 13);
@@ -1542,11 +1542,11 @@
             this.nlabDataGridViewTextBoxColumn,
             this.nehDataGridViewTextBoxColumn});
             this.dataGridView2.DataSource = this.addsubBindingSource;
-            this.dataGridView2.Location = new System.Drawing.Point(15, 65);
+            this.dataGridView2.Location = new System.Drawing.Point(4, 65);
             this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 28;
-            this.dataGridView2.Size = new System.Drawing.Size(657, 145);
+            this.dataGridView2.Size = new System.Drawing.Size(685, 145);
             this.dataGridView2.TabIndex = 0;
             this.dataGridView2.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView2_RowHeaderMouseClick);
             // 
@@ -1897,6 +1897,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nthDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nlabDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nehDataGridViewTextBoxColumn;
-        public System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }
