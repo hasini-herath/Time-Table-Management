@@ -358,6 +358,7 @@ namespace TimeManagement1
             con.Close();
             // display_data();
             // display_data1();
+
             display_data2();
             MessageBox.Show("update succcess");
         }
@@ -385,7 +386,7 @@ namespace TimeManagement1
         catch (Exception ex)
         {
             MessageBox.Show(ex.Message);
-        nb9 
+            nb9
     }
 
         private void textBox10_TextChanged(object sender, EventArgs e)
