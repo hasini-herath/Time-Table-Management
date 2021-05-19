@@ -55,7 +55,6 @@
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -206,7 +205,8 @@
             this.tabPage18 = new System.Windows.Forms.TabPage();
             this.tabControl7 = new System.Windows.Forms.TabControl();
             this.tabPage19 = new System.Windows.Forms.TabPage();
-            this.tabPage20 = new System.Windows.Forms.TabPage();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.label70 = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
             this.radioButton3 = new System.Windows.Forms.RadioButton();
@@ -235,6 +235,10 @@
             this.label59 = new System.Windows.Forms.Label();
             this.button27 = new System.Windows.Forms.Button();
             this.button28 = new System.Windows.Forms.Button();
+            this.tabPage20 = new System.Windows.Forms.TabPage();
+            this.button32 = new System.Windows.Forms.Button();
+            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
             this.label60 = new System.Windows.Forms.Label();
             this.radioButton10 = new System.Windows.Forms.RadioButton();
             this.radioButton11 = new System.Windows.Forms.RadioButton();
@@ -270,11 +274,6 @@
             this.label68 = new System.Windows.Forms.Label();
             this.button30 = new System.Windows.Forms.Button();
             this.button31 = new System.Windows.Forms.Button();
-            this.button32 = new System.Windows.Forms.Button();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label69 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label70 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabControl2.SuspendLayout();
@@ -392,6 +391,7 @@
             this.button15.TabIndex = 89;
             this.button15.Text = "VIEW SESSION";
             this.button15.UseVisualStyleBackColor = false;
+            this.button15.Click += new System.EventHandler(this.button15_Click);
             // 
             // textBox12
             // 
@@ -414,6 +414,7 @@
             this.button13.TabIndex = 87;
             this.button13.Text = "CLEAR";
             this.button13.UseVisualStyleBackColor = false;
+            this.button13.Click += new System.EventHandler(this.button13_Click);
             // 
             // textBox8
             // 
@@ -446,6 +447,7 @@
             this.button14.TabIndex = 84;
             this.button14.Text = "INSERT";
             this.button14.UseVisualStyleBackColor = false;
+            this.button14.Click += new System.EventHandler(this.button14_Click);
             // 
             // textBox9
             // 
@@ -566,7 +568,6 @@
             this.tabPage4.Controls.Add(this.textBox5);
             this.tabPage4.Controls.Add(this.button8);
             this.tabPage4.Controls.Add(this.button7);
-            this.tabPage4.Controls.Add(this.button6);
             this.tabPage4.Controls.Add(this.button5);
             this.tabPage4.Controls.Add(this.dataGridView1);
             this.tabPage4.Controls.Add(this.button4);
@@ -593,6 +594,7 @@
             this.button11.TabIndex = 62;
             this.button11.Text = "GENERATE SESSION";
             this.button11.UseVisualStyleBackColor = false;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // textBox5
             // 
@@ -608,13 +610,14 @@
             this.button8.FlatAppearance.BorderSize = 0;
             this.button8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button8.ForeColor = System.Drawing.Color.White;
-            this.button8.Location = new System.Drawing.Point(561, 176);
+            this.button8.Location = new System.Drawing.Point(561, 166);
             this.button8.Margin = new System.Windows.Forms.Padding(2);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(107, 24);
             this.button8.TabIndex = 60;
             this.button8.Text = "DELETE";
             this.button8.UseVisualStyleBackColor = false;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button7
             // 
@@ -622,27 +625,14 @@
             this.button7.FlatAppearance.BorderSize = 0;
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(561, 141);
+            this.button7.Location = new System.Drawing.Point(561, 119);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(107, 24);
             this.button7.TabIndex = 59;
             this.button7.Text = "UPDATE";
             this.button7.UseVisualStyleBackColor = false;
-            // 
-            // button6
-            // 
-            this.button6.BackColor = System.Drawing.Color.Maroon;
-            this.button6.FlatAppearance.BorderSize = 0;
-            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(561, 105);
-            this.button6.Margin = new System.Windows.Forms.Padding(2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(107, 24);
-            this.button6.TabIndex = 58;
-            this.button6.Text = "VIEW";
-            this.button6.UseVisualStyleBackColor = false;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button5
             // 
@@ -657,6 +647,7 @@
             this.button5.TabIndex = 57;
             this.button5.Text = "REFRESH";
             this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridView1
             // 
@@ -724,6 +715,7 @@
             this.button4.TabIndex = 55;
             this.button4.Text = "SEARCH";
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // comboBox5
             // 
@@ -2053,48 +2045,24 @@
             this.tabPage19.TabIndex = 0;
             this.tabPage19.Text = "Add Working Period";
             // 
-            // tabPage20
+            // textBox15
             // 
-            this.tabPage20.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tabPage20.Controls.Add(this.button32);
-            this.tabPage20.Controls.Add(this.textBox14);
-            this.tabPage20.Controls.Add(this.label69);
-            this.tabPage20.Controls.Add(this.label60);
-            this.tabPage20.Controls.Add(this.radioButton10);
-            this.tabPage20.Controls.Add(this.radioButton11);
-            this.tabPage20.Controls.Add(this.radioButton12);
-            this.tabPage20.Controls.Add(this.comboBox23);
-            this.tabPage20.Controls.Add(this.comboBox24);
-            this.tabPage20.Controls.Add(this.domainUpDown24);
-            this.tabPage20.Controls.Add(this.domainUpDown25);
-            this.tabPage20.Controls.Add(this.domainUpDown26);
-            this.tabPage20.Controls.Add(this.domainUpDown27);
-            this.tabPage20.Controls.Add(this.label61);
-            this.tabPage20.Controls.Add(this.label62);
-            this.tabPage20.Controls.Add(this.checkBox22);
-            this.tabPage20.Controls.Add(this.checkBox23);
-            this.tabPage20.Controls.Add(this.checkBox24);
-            this.tabPage20.Controls.Add(this.checkBox25);
-            this.tabPage20.Controls.Add(this.checkBox26);
-            this.tabPage20.Controls.Add(this.checkBox27);
-            this.tabPage20.Controls.Add(this.checkBox28);
-            this.tabPage20.Controls.Add(this.dataGridView10);
-            this.tabPage20.Controls.Add(this.button29);
-            this.tabPage20.Controls.Add(this.domainUpDown28);
-            this.tabPage20.Controls.Add(this.label63);
-            this.tabPage20.Controls.Add(this.label64);
-            this.tabPage20.Controls.Add(this.label65);
-            this.tabPage20.Controls.Add(this.label66);
-            this.tabPage20.Controls.Add(this.label67);
-            this.tabPage20.Controls.Add(this.label68);
-            this.tabPage20.Controls.Add(this.button30);
-            this.tabPage20.Controls.Add(this.button31);
-            this.tabPage20.Location = new System.Drawing.Point(4, 25);
-            this.tabPage20.Name = "tabPage20";
-            this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage20.Size = new System.Drawing.Size(789, 378);
-            this.tabPage20.TabIndex = 1;
-            this.tabPage20.Text = "Manage Working Period";
+            this.textBox15.Location = new System.Drawing.Point(284, 50);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(120, 23);
+            this.textBox15.TabIndex = 170;
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label70.Location = new System.Drawing.Point(44, 53);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(23, 17);
+            this.label70.TabIndex = 169;
+            this.label70.Text = "ID";
+            this.label70.Click += new System.EventHandler(this.label70_Click);
             // 
             // radioButton1
             // 
@@ -2356,6 +2324,79 @@
             this.button28.TabIndex = 120;
             this.button28.Text = "Save";
             this.button28.UseVisualStyleBackColor = false;
+            // 
+            // tabPage20
+            // 
+            this.tabPage20.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tabPage20.Controls.Add(this.button32);
+            this.tabPage20.Controls.Add(this.textBox14);
+            this.tabPage20.Controls.Add(this.label69);
+            this.tabPage20.Controls.Add(this.label60);
+            this.tabPage20.Controls.Add(this.radioButton10);
+            this.tabPage20.Controls.Add(this.radioButton11);
+            this.tabPage20.Controls.Add(this.radioButton12);
+            this.tabPage20.Controls.Add(this.comboBox23);
+            this.tabPage20.Controls.Add(this.comboBox24);
+            this.tabPage20.Controls.Add(this.domainUpDown24);
+            this.tabPage20.Controls.Add(this.domainUpDown25);
+            this.tabPage20.Controls.Add(this.domainUpDown26);
+            this.tabPage20.Controls.Add(this.domainUpDown27);
+            this.tabPage20.Controls.Add(this.label61);
+            this.tabPage20.Controls.Add(this.label62);
+            this.tabPage20.Controls.Add(this.checkBox22);
+            this.tabPage20.Controls.Add(this.checkBox23);
+            this.tabPage20.Controls.Add(this.checkBox24);
+            this.tabPage20.Controls.Add(this.checkBox25);
+            this.tabPage20.Controls.Add(this.checkBox26);
+            this.tabPage20.Controls.Add(this.checkBox27);
+            this.tabPage20.Controls.Add(this.checkBox28);
+            this.tabPage20.Controls.Add(this.dataGridView10);
+            this.tabPage20.Controls.Add(this.button29);
+            this.tabPage20.Controls.Add(this.domainUpDown28);
+            this.tabPage20.Controls.Add(this.label63);
+            this.tabPage20.Controls.Add(this.label64);
+            this.tabPage20.Controls.Add(this.label65);
+            this.tabPage20.Controls.Add(this.label66);
+            this.tabPage20.Controls.Add(this.label67);
+            this.tabPage20.Controls.Add(this.label68);
+            this.tabPage20.Controls.Add(this.button30);
+            this.tabPage20.Controls.Add(this.button31);
+            this.tabPage20.Location = new System.Drawing.Point(4, 25);
+            this.tabPage20.Name = "tabPage20";
+            this.tabPage20.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage20.Size = new System.Drawing.Size(789, 378);
+            this.tabPage20.TabIndex = 1;
+            this.tabPage20.Text = "Manage Working Period";
+            // 
+            // button32
+            // 
+            this.button32.BackColor = System.Drawing.Color.Maroon;
+            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.button32.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button32.Location = new System.Drawing.Point(454, 31);
+            this.button32.Name = "button32";
+            this.button32.Size = new System.Drawing.Size(111, 32);
+            this.button32.TabIndex = 168;
+            this.button32.Text = "Search";
+            this.button32.UseVisualStyleBackColor = false;
+            // 
+            // textBox14
+            // 
+            this.textBox14.Location = new System.Drawing.Point(297, 38);
+            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
+            this.textBox14.Name = "textBox14";
+            this.textBox14.Size = new System.Drawing.Size(131, 23);
+            this.textBox14.TabIndex = 167;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
+            this.label69.Location = new System.Drawing.Point(157, 38);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(23, 17);
+            this.label69.TabIndex = 166;
+            this.label69.Text = "ID";
             // 
             // label60
             // 
@@ -2670,55 +2711,6 @@
             this.button31.Text = "Update";
             this.button31.UseVisualStyleBackColor = false;
             // 
-            // button32
-            // 
-            this.button32.BackColor = System.Drawing.Color.Maroon;
-            this.button32.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.button32.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button32.Location = new System.Drawing.Point(454, 31);
-            this.button32.Name = "button32";
-            this.button32.Size = new System.Drawing.Size(111, 32);
-            this.button32.TabIndex = 168;
-            this.button32.Text = "Search";
-            this.button32.UseVisualStyleBackColor = false;
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(297, 38);
-            this.textBox14.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(131, 23);
-            this.textBox14.TabIndex = 167;
-            // 
-            // label69
-            // 
-            this.label69.AutoSize = true;
-            this.label69.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label69.Location = new System.Drawing.Point(157, 38);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(23, 17);
-            this.label69.TabIndex = 166;
-            this.label69.Text = "ID";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(284, 50);
-            this.textBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(120, 23);
-            this.textBox15.TabIndex = 170;
-            // 
-            // label70
-            // 
-            this.label70.AutoSize = true;
-            this.label70.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold);
-            this.label70.Location = new System.Drawing.Point(44, 53);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(23, 17);
-            this.label70.TabIndex = 169;
-            this.label70.Text = "ID";
-            this.label70.Click += new System.EventHandler(this.label70_Click);
-            // 
             // sesions
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -2793,7 +2785,6 @@
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;

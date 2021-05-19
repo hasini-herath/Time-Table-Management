@@ -126,5 +126,144 @@ namespace TimeManagement1
         {
 
         }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "insert into session values('" + comboBox11.Text + "','" + comboBox9.Text + "','" + comboBox8.Text + "','" + comboBox10.Text + "','" + textBox8.Text + "','" + textBox9.Text + "')";
+                cmd.ExecuteNonQuery();
+                con.Close();
+
+                display_session();
+                // display_data1();
+                //   display_data2();
+                MessageBox.Show("Insert Data Successfully!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            comboBox11.Text = "";
+            comboBox9.Text = "";
+            comboBox8.Text = "";
+            comboBox10.Text = "";
+            textBox8.Text = "";
+            textBox9.Text = "";
+            
+        }
+
+        private void button15_Click(object sender, EventArgs e)
+        {
+            textBox12.Text = comboBox11.Text + " - " + comboBox10.Text + " - " + comboBox9.Text + " - " + comboBox8.Text + " - " + textBox8.Text + " - " + textBox9.Text;
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (comboBox5.Text == "lecturer")
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from session where selec='" + textBox4.Text + "'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+            }
+            else if (comboBox5.Text == "subject")
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from session where selsub='" + textBox4.Text + "'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+            }
+            else if (comboBox5.Text == "group")
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "select * from session where selgrp='" + textBox4.Text + "'";
+                cmd.ExecuteNonQuery();
+                DataTable dt = new DataTable();
+                SqlDataAdapter da = new SqlDataAdapter(cmd);
+                da.Fill(dt);
+                dataGridView1.DataSource = dt;
+                con.Close();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            display_session();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "update session set selec='" + comboBox29.Text + "',selgrp='" + comboBox16.Text + "',selsub='" + comboBox15.Text + "',seltag='" + comboBox28.Text + "',nostu='" + textBox10.Text + "' ,duration='" + textBox17.Text + "' where id='" + textBox18.Text + "'";
+                cmd.ExecuteNonQuery();
+                con.Close();
+                // display_data();
+                display_session();
+                //display_data2();
+                MessageBox.Show("update succcess");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+
+            try
+            {
+                con.Open();
+                SqlCommand cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = "delete from session where id='" + textBox18.Text + "'";
+                cmd.ExecuteNonQuery();
+                con.Close();
+                // display_data();
+                display_session();
+                // display_data2();
+                MessageBox.Show("delete succesfull!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            textBox5.Text = comboBox29.Text + " - " + comboBox16.Text + " - " + comboBox15.Text + " - " + comboBox28.Text + " - " + textBox10.Text + " - " + textBox17.Text;
+        }
     }
 }
