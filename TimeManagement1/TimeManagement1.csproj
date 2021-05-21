@@ -12,6 +12,7 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -52,6 +52,7 @@
       <HintPath>C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5.2\System.dll</HintPath>
     </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -63,14 +64,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="C:\Users\it\Documents\location.cs">
-      <Link>location.cs</Link>
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="C:\Users\it\Documents\location.Designer.cs">
-      <Link>location.Designer.cs</Link>
-      <DependentUpon>location.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +75,18 @@
     </Compile>
     <Compile Include="lecturer.Designer.cs">
       <DependentUpon>lecturer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Loading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Loading.Designer.cs">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="location1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="location1.Designer.cs">
+      <DependentUpon>location1.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -129,15 +134,292 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>time1DataSet3.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="C:\Users\it\Documents\location.resx">
-      <Link>location.resx</Link>
-      <DependentUpon>location.cs</DependentUpon>
-    </EmbeddedResource>
+    <Compile Include="timemanagementDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet10.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet10.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet11.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet11.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet12.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet12.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet131.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet131.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet14.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet14.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet15.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet15.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet16.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet17.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet17.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet18.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet18.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet19.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet19.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet20.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet20.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet21.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet21.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet22.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet22.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet23.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet23.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet24.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet24.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet25.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet25.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet26.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet26.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet27.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet27.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet28.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet28.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet29.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet29.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet30.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet30.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet311.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet311.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet32.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet33.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet33.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet34.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet34.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet35.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet35.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet36.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet36.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet37.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet37.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet38.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet38.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet39.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet39.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet40.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet40.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet41.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet41.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet42.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet42.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet43.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet43.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet44.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet44.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet45.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet45.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet46.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet46.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet47.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet47.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet48.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet48.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet49.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet49.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet50.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet50.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet51.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet51.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet52.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet52.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet53.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet53.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet54.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet54.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet8.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet8.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="timemanagementDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>timemanagementDataSet9.xsd</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="lecturer.resx">
       <DependentUpon>lecturer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Loading.resx">
+      <DependentUpon>Loading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="location1.resx">
+      <DependentUpon>location1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -214,6 +496,611 @@
     <None Include="time1DataSet3.xss">
       <DependentUpon>time1DataSet3.xsd</DependentUpon>
     </None>
+    <None Include="timemanagementDataSet.xsc">
+      <DependentUpon>timemanagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet.xss">
+      <DependentUpon>timemanagementDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet1.xsc">
+      <DependentUpon>timemanagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet1.xss">
+      <DependentUpon>timemanagementDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet10.xsc">
+      <DependentUpon>timemanagementDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet10.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet10.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet10.xss">
+      <DependentUpon>timemanagementDataSet10.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet11.xsc">
+      <DependentUpon>timemanagementDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet11.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet11.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet11.xss">
+      <DependentUpon>timemanagementDataSet11.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet12.xsc">
+      <DependentUpon>timemanagementDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet12.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet12.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet12.xss">
+      <DependentUpon>timemanagementDataSet12.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet131.xsc">
+      <DependentUpon>timemanagementDataSet131.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet131.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet131.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet131.xss">
+      <DependentUpon>timemanagementDataSet131.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet14.xsc">
+      <DependentUpon>timemanagementDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet14.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet14.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet14.xss">
+      <DependentUpon>timemanagementDataSet14.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet15.xsc">
+      <DependentUpon>timemanagementDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet15.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet15.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet15.xss">
+      <DependentUpon>timemanagementDataSet15.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet16.xsc">
+      <DependentUpon>timemanagementDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet16.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet16.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet16.xss">
+      <DependentUpon>timemanagementDataSet16.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet17.xsc">
+      <DependentUpon>timemanagementDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet17.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet17.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet17.xss">
+      <DependentUpon>timemanagementDataSet17.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet18.xsc">
+      <DependentUpon>timemanagementDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet18.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet18.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet18.xss">
+      <DependentUpon>timemanagementDataSet18.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet19.xsc">
+      <DependentUpon>timemanagementDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet19.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet19.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet19.xss">
+      <DependentUpon>timemanagementDataSet19.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet2.xsc">
+      <DependentUpon>timemanagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet2.xss">
+      <DependentUpon>timemanagementDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet20.xsc">
+      <DependentUpon>timemanagementDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet20.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet20.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet20.xss">
+      <DependentUpon>timemanagementDataSet20.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet21.xsc">
+      <DependentUpon>timemanagementDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet21.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet21.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet21.xss">
+      <DependentUpon>timemanagementDataSet21.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet22.xsc">
+      <DependentUpon>timemanagementDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet22.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet22.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet22.xss">
+      <DependentUpon>timemanagementDataSet22.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet23.xsc">
+      <DependentUpon>timemanagementDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet23.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet23.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet23.xss">
+      <DependentUpon>timemanagementDataSet23.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet24.xsc">
+      <DependentUpon>timemanagementDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet24.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet24.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet24.xss">
+      <DependentUpon>timemanagementDataSet24.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet25.xsc">
+      <DependentUpon>timemanagementDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet25.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet25.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet25.xss">
+      <DependentUpon>timemanagementDataSet25.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet26.xsc">
+      <DependentUpon>timemanagementDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet26.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet26.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet26.xss">
+      <DependentUpon>timemanagementDataSet26.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet27.xsc">
+      <DependentUpon>timemanagementDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet27.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet27.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet27.xss">
+      <DependentUpon>timemanagementDataSet27.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet28.xsc">
+      <DependentUpon>timemanagementDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet28.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet28.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet28.xss">
+      <DependentUpon>timemanagementDataSet28.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet29.xsc">
+      <DependentUpon>timemanagementDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet29.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet29.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet29.xss">
+      <DependentUpon>timemanagementDataSet29.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet3.xsc">
+      <DependentUpon>timemanagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet3.xss">
+      <DependentUpon>timemanagementDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet30.xsc">
+      <DependentUpon>timemanagementDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet30.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet30.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet30.xss">
+      <DependentUpon>timemanagementDataSet30.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet311.xsc">
+      <DependentUpon>timemanagementDataSet311.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet311.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet311.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet311.xss">
+      <DependentUpon>timemanagementDataSet311.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet32.xsc">
+      <DependentUpon>timemanagementDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet32.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet32.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet32.xss">
+      <DependentUpon>timemanagementDataSet32.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet33.xsc">
+      <DependentUpon>timemanagementDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet33.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet33.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet33.xss">
+      <DependentUpon>timemanagementDataSet33.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet34.xsc">
+      <DependentUpon>timemanagementDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet34.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet34.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet34.xss">
+      <DependentUpon>timemanagementDataSet34.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet35.xsc">
+      <DependentUpon>timemanagementDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet35.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet35.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet35.xss">
+      <DependentUpon>timemanagementDataSet35.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet36.xsc">
+      <DependentUpon>timemanagementDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet36.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet36.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet36.xss">
+      <DependentUpon>timemanagementDataSet36.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet37.xsc">
+      <DependentUpon>timemanagementDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet37.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet37.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet37.xss">
+      <DependentUpon>timemanagementDataSet37.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet38.xsc">
+      <DependentUpon>timemanagementDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet38.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet38.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet38.xss">
+      <DependentUpon>timemanagementDataSet38.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet39.xsc">
+      <DependentUpon>timemanagementDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet39.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet39.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet39.xss">
+      <DependentUpon>timemanagementDataSet39.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet4.xsc">
+      <DependentUpon>timemanagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet4.xss">
+      <DependentUpon>timemanagementDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet40.xsc">
+      <DependentUpon>timemanagementDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet40.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet40.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet40.xss">
+      <DependentUpon>timemanagementDataSet40.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet41.xsc">
+      <DependentUpon>timemanagementDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet41.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet41.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet41.xss">
+      <DependentUpon>timemanagementDataSet41.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet42.xsc">
+      <DependentUpon>timemanagementDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet42.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet42.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet42.xss">
+      <DependentUpon>timemanagementDataSet42.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet43.xsc">
+      <DependentUpon>timemanagementDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet43.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet43.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet43.xss">
+      <DependentUpon>timemanagementDataSet43.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet44.xsc">
+      <DependentUpon>timemanagementDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet44.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet44.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet44.xss">
+      <DependentUpon>timemanagementDataSet44.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet45.xsc">
+      <DependentUpon>timemanagementDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet45.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet45.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet45.xss">
+      <DependentUpon>timemanagementDataSet45.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet46.xsc">
+      <DependentUpon>timemanagementDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet46.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet46.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet46.xss">
+      <DependentUpon>timemanagementDataSet46.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet47.xsc">
+      <DependentUpon>timemanagementDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet47.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet47.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet47.xss">
+      <DependentUpon>timemanagementDataSet47.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet48.xsc">
+      <DependentUpon>timemanagementDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet48.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet48.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet48.xss">
+      <DependentUpon>timemanagementDataSet48.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet49.xsc">
+      <DependentUpon>timemanagementDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet49.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet49.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet49.xss">
+      <DependentUpon>timemanagementDataSet49.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet5.xsc">
+      <DependentUpon>timemanagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet5.xss">
+      <DependentUpon>timemanagementDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet50.xsc">
+      <DependentUpon>timemanagementDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet50.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet50.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet50.xss">
+      <DependentUpon>timemanagementDataSet50.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet51.xsc">
+      <DependentUpon>timemanagementDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet51.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet51.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet51.xss">
+      <DependentUpon>timemanagementDataSet51.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet52.xsc">
+      <DependentUpon>timemanagementDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet52.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet52.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet52.xss">
+      <DependentUpon>timemanagementDataSet52.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet53.xsc">
+      <DependentUpon>timemanagementDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet53.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet53.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet53.xss">
+      <DependentUpon>timemanagementDataSet53.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet54.xsc">
+      <DependentUpon>timemanagementDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet54.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet54.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet54.xss">
+      <DependentUpon>timemanagementDataSet54.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet6.xsc">
+      <DependentUpon>timemanagementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet6.xss">
+      <DependentUpon>timemanagementDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet7.xsc">
+      <DependentUpon>timemanagementDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet7.xss">
+      <DependentUpon>timemanagementDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet8.xsc">
+      <DependentUpon>timemanagementDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet8.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet8.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet8.xss">
+      <DependentUpon>timemanagementDataSet8.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet9.xsc">
+      <DependentUpon>timemanagementDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="timemanagementDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>timemanagementDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="timemanagementDataSet9.xss">
+      <DependentUpon>timemanagementDataSet9.xsd</DependentUpon>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -225,12 +1112,26 @@
     <None Include="Resources\large %282%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="testing.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="testing_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>testing.mdf</DependentUpon>
+    </Content>
     <Content Include="time1.mdf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="time1_log.ldf">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>time1.mdf</DependentUpon>
+    </Content>
+    <Content Include="timemanagement.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="timemanagement_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>timemanagement.mdf</DependentUpon>
     </Content>
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +1145,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

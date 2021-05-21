@@ -58,7 +58,7 @@ namespace TimeManagement1
         private void button4_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            location infrm = new location();
+            location1 infrm = new location1();
             infrm.TopLevel = false;
             panel2.Controls.Add(infrm);
             infrm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -69,7 +69,7 @@ namespace TimeManagement1
         private void button6_Click(object sender, EventArgs e)
         {
             panel2.Controls.Clear();
-            Statictits infrm = new Statictits();
+            Statistics infrm = new Statistics();
             infrm.TopLevel = false;
             panel2.Controls.Add(infrm);
             infrm.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -78,6 +78,21 @@ namespace TimeManagement1
         }
 
         private void button7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            DialogResult result = MessageBox.Show(null, "Do You Want to Exit", "Select", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if(result == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
         {
 
         }
